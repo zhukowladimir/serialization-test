@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "proto_stuff/models";
+
+message Test {
+    string name = 1;
+    int32 id = 2;
+    repeated int32 service_ids = 3;
+    
+    message Qwe {
+        string rty = 1;
+        int64  ott = 2;
+    }
+
+    repeated Qwe tests = 4;
+    repeated double flts = 5;
+    map<string, int32>  dict = 6;
+    float very_long_name_for_small_variable = 7;
+}

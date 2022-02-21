@@ -1,0 +1,27 @@
+{
+    "namespace": "one.panim",
+    "type": "record",
+    "name": "test",
+    "fields": [
+        { "name": "ID", "type": "int" },
+        { "name": "Name", "type": "string" },
+        { "name": "ServiceIDs", "type": { "type": "array", "items": "int" } },
+        {
+            "name": "Tests",
+            "type": {
+                "type": "array",
+                "items": {
+                    "name": "Qwe",
+                    "type": "record",
+                    "fields": [
+                        { "name": "Rty", "type": "string" },
+                        { "name": "Ott", "type": "long" }
+                    ]
+                }
+            }
+        },
+        { "name": "Flts", "type": { "type": "array", "items": "double" } },
+        { "name": "Dict", "type": { "type": "map", "values": "int" } },
+        { "name": "VeryLongNameForSmallVariable", "type": "float" }
+    ]
+}
