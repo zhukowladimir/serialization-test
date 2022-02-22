@@ -60,7 +60,7 @@ msg:	{14894918 116914643 219894076}
 ```
 docker pull zhukowladimir/serialization_test
 docker run -d --name your-container-name zhukowladimir/serialization_test
-docker cp your-container-name:/serialization-test/report.xlsx /your/local/path/your_report_name.xlsx
+docker cp your-container-name:/serialization-test/report/report.xlsx /your/local/path/your_report_name.xlsx
 ```
 С помощью этого вы получите отчет, который будет храниться здесь: `/your/local/path/your_report_name.xlsx`.
 
