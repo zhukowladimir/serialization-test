@@ -36,6 +36,7 @@
 Запуск приложения:
 
 ```
+mkdir files
 go run main.go
 ```
 
